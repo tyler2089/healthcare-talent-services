@@ -1,0 +1,144 @@
+.jobapply-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  padding: 0px 50px;
+  justify-content: start;
+  align-items: center;
+  overflow-y: scroll;
+  position: relative;
+  font-family: "GT Walsheim Pro";
+}
+
+.exit-jobapply {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.exit-jobapply:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.jobapply-application {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 70%;
+  background-color: #4c607e;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px grey;
+  color: white;
+}
+
+.jobapply-inputrow {
+  display: flex;
+  flex-direction: Column;
+  width: 50%;
+  justify-content: center;
+  align-items: start;
+}
+
+.jobapply-inputrow input {
+  width: 70%;
+  height: 30px;
+  margin: 0px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "GT Walsheim Pro";
+}
+
+.jobapply-inputrow h3 {
+  margin: 0px 10px;
+  padding: 5px;
+  text-wrap: nowrap;
+}
+
+.jobapply-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.jobapply-section-button {
+  display: inline-block;
+  position: relative;
+  color: white;
+  border: none;
+  font-family: "GT Walsheim Pro";
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  text-wrap: nowrap;
+  background-color: #001f3f;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  border: 2px solid white;
+}
+
+.jobapply-section-button:hover {
+  color: #001f3f;
+  background-color: white;
+  border: 2px solid #001f3f;
+}
+
+.jobapply-section-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #001f3f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.jobapply-section-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media screen and (max-width: 800px) {
+  .jobapply-application {
+    width: 90%;
+  }
+
+  .jobapply-container {
+    width: 95%;
+    padding: 0px;
+  }
+  .jobapply-description {
+    width: 95%;
+  }
+  .jobapply-description-title {
+    width: 70%;
+  }
+}

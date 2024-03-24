@@ -1,0 +1,103 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-wipe {
+  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-out-up both;
+  transition: all 2.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-wipe > * {
+  transform: translateY(-500px);
+  transition: all 1s ease-in-out;
+}
+.intro-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-header {
+  font-family: "GT Walsheim Pro";
+  transition: all 1s ease-in;
+}
+.intro-text {
+  position: absolute;
+  color: white;
+}
+
+.intro-text h2 {
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+}
+
+.intro-text h2:hover {
+  background-color: rgb(156, 168, 142);
+}
+.canvas {
+  width: 100vw;
+  height: 100vh;
+}
+.not-revealed {
+  display: hidden;
+  opacity: 0;
+  color: #373638;
+  height: 10vh;
+  margin-bottom: 0vh;
+  text-align: end;
+  transform: rotate(180deg);
+}
+
+.revealed {
+  transition: all 0.4s ease-in-out;
+  opacity: 100;
+  position: absolute;
+  color: #373638;
+  height: 10vh;
+  text-align: end;
+  margin-bottom: 10vh;
+  cursor: pointer;
+  animation: floatUpDown 2s ease-in-out infinite;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+@keyframes wipe-out-up {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 100% 0);
+  }
+}
+
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .intro {
+    margin: auto;
+    height: 70vh;
+    width: 90vw;
+  }
+}

@@ -1,0 +1,71 @@
+.adminviewjobs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.adminviewjobs-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 80%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.delete-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+.job-card {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 2px solid black;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.job-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 90%;
+}
+.job-card-info-editing {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 90%;
+}
+
+.job-card-info-editing input {
+  font-size: 1.5em;
+  margin: 0px 10px;
+  width: 50%;
+}
+
+.job-card-info-editing > div {
+  width: 100%;
+}
+.job-info-textarea-editing {
+  font-size: 1.2em;
+  width: 80%;
+  height: 100px;
+  resize: none;
+}

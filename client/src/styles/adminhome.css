@@ -1,0 +1,25 @@
+.adminhome-container {
+  width: 50vw;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.adminhome-container button {
+  font-family: "GT Walsheim Pro";
+  margin: auto;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 10px;
+  background-color: seagreen;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.adminhome-container button:hover {
+  background-color: rgb(22, 65, 40);
+}
