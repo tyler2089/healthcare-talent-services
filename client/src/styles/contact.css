@@ -23,7 +23,7 @@
   color: white;
   align-items: center;
   width: 90%;
-  background-color: rgba(0, 31, 63, 1);
+  background-color: #003b00;
   height: 70%;
   padding: 20px;
   box-shadow: 0px 0px 10px black;
@@ -49,7 +49,7 @@
   font-size: 0.8em;
   padding: 15px;
   border-radius: 20%;
-  background-color: rgba(0, 31, 63, 1);
+  background-color: #003b00;
   box-shadow: 0px 0px 10px black;
 }
 
@@ -110,16 +110,16 @@
   padding: 10px 20px;
   font-size: 2em;
   text-wrap: nowrap;
-  background-color: #4c607e;
+  background-color: #798b79;
   cursor: pointer;
   transition: all 0.2s ease-in;
   border: 2px solid white;
 }
 
 .submit-button:hover {
-  color: #4c607e;
+  color: #798b79;
   background-color: white;
-  border: 2px solid #4c607e;
+  border: 2px solid #798b79;
 }
 
 .submit-button::after {
@@ -130,7 +130,7 @@
   height: 5px;
   bottom: 0;
   left: 0;
-  background-color: #4c607e;
+  background-color: #798b79;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -149,16 +149,16 @@
   padding: 10px 20px;
   font-size: 2em;
   text-wrap: nowrap;
-  background-color: #4c607e;
+  background-color: #798b79;
   cursor: pointer;
   transition: all 0.2s ease-in;
   border: 2px solid white;
 }
 
 .resume-button:hover {
-  color: #4c607e;
+  color: #798b79;
   background-color: white;
-  border: 2px solid #4c607e;
+  border: 2px solid #798b79;
 }
 
 .resume-button::after {
@@ -169,7 +169,7 @@
   height: 5px;
   bottom: 0;
   left: 0;
-  background-color: #4c607e;
+  background-color: #798b79;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -206,11 +206,11 @@
 
   .contact-form {
     height: 70%;
-    background-color: rgba(0, 31, 63, 0.65);
+    background-color: rgba(0, 59, 0, 0.65);
   }
 
   .contact-info {
-    background-color: rgba(0, 31, 63, 0.65);
+    background-color: rgba(0, 59, 0, 0.65);
   }
   .contact-form-container {
     width: 70%;
@@ -251,11 +251,11 @@
     width: 70%;
     height: 70%;
     font-size: 1em;
-    background-color: rgba(0, 31, 63, 0.65);
+    background-color: rgba(0, 59, 0, 0.65);
   }
 
   .contact-info {
-    background-color: rgba(0, 31, 63, 0.65);
+    background-color: rgba(0, 59, 0, 0.65);
   }
   .contact-form-container {
     width: 80%;

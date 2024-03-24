@@ -41,43 +41,43 @@ function Homepage() {
     if (indexStore.homePageOption) {
       switch (indexStore.homePageOption) {
         case "home":
-          homeLink.current.style.backgroundColor = "#4C607E";
-          jobSearchLink.current.style.backgroundColor = "#001F3F";
-          employersLink.current.style.backgroundColor = "#001F3F";
-          aboutUsLink.current.style.backgroundColor = "#001F3F";
-          careersLink.current.style.backgroundColor = "#001F3F";
+          homeLink.current.style.backgroundColor = "#798b79";
+          jobSearchLink.current.style.backgroundColor = "#003b00";
+          employersLink.current.style.backgroundColor = "#003b00";
+          aboutUsLink.current.style.backgroundColor = "#003b00";
+          careersLink.current.style.backgroundColor = "#003b00";
           break;
 
         case "jobsearch":
-          homeLink.current.style.backgroundColor = "#001F3F";
-          jobSearchLink.current.style.backgroundColor = "#4C607E";
-          employersLink.current.style.backgroundColor = "#001F3F";
-          aboutUsLink.current.style.backgroundColor = "#001F3F";
-          careersLink.current.style.backgroundColor = "#001F3F";
+          homeLink.current.style.backgroundColor = "#003b00";
+          jobSearchLink.current.style.backgroundColor = "#798b79";
+          employersLink.current.style.backgroundColor = "#003b00";
+          aboutUsLink.current.style.backgroundColor = "#003b00";
+          careersLink.current.style.backgroundColor = "#003b00";
           break;
 
         case "employer":
-          homeLink.current.style.backgroundColor = "#001F3F";
-          jobSearchLink.current.style.backgroundColor = "#001F3F";
-          employersLink.current.style.backgroundColor = "#4C607E";
-          aboutUsLink.current.style.backgroundColor = "#001F3F";
-          careersLink.current.style.backgroundColor = "#001F3F";
+          homeLink.current.style.backgroundColor = "#003b00";
+          jobSearchLink.current.style.backgroundColor = "#003b00";
+          employersLink.current.style.backgroundColor = "#798b79";
+          aboutUsLink.current.style.backgroundColor = "#003b00";
+          careersLink.current.style.backgroundColor = "#003b00";
           break;
 
         case "about":
-          homeLink.current.style.backgroundColor = "#001F3F";
-          jobSearchLink.current.style.backgroundColor = "#001F3F";
-          employersLink.current.style.backgroundColor = "#001F3F";
-          aboutUsLink.current.style.backgroundColor = "#4C607E";
-          careersLink.current.style.backgroundColor = "#001F3F";
+          homeLink.current.style.backgroundColor = "#003b00";
+          jobSearchLink.current.style.backgroundColor = "#003b00";
+          employersLink.current.style.backgroundColor = "#003b00";
+          aboutUsLink.current.style.backgroundColor = "#798b79";
+          careersLink.current.style.backgroundColor = "#003b00";
           break;
 
         case "careers":
-          homeLink.current.style.backgroundColor = "#001F3F";
-          jobSearchLink.current.style.backgroundColor = "#001F3F";
-          employersLink.current.style.backgroundColor = "#001F3F";
-          aboutUsLink.current.style.backgroundColor = "#001F3F";
-          careersLink.current.style.backgroundColor = "#4C607E";
+          homeLink.current.style.backgroundColor = "#003b00";
+          jobSearchLink.current.style.backgroundColor = "#003b00";
+          employersLink.current.style.backgroundColor = "#003b00";
+          aboutUsLink.current.style.backgroundColor = "#003b00";
+          careersLink.current.style.backgroundColor = "#798b79";
           break;
       }
     }
@@ -107,7 +107,7 @@ function Homepage() {
       <div className="title-card" ref={titleCard}>
         <div className="company-name-container">
           <h1 className="company-name" ref={header}>
-            Bank Talent Solutions
+            Healthcare Talent Services
           </h1>
           <div className="veteran-owned">
             <img src={require("../static/veterans.png")}></img>
