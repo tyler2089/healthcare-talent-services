@@ -10,7 +10,7 @@ async function postData(
   jobId = null
 ) {
   const result = await fetch(
-    "https://saut95n2e9.execute-api.us-east-1.amazonaws.com/Test/LambdaTest",
+    "https://saut95n2e9.execute-api.us-east-1.amazonaws.com/Test/HealthcareLambda",
     {
       method: "POST",
       headers: {

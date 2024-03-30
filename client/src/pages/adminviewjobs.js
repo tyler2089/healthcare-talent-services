@@ -60,16 +60,15 @@ const AdminViewJobs = ({ jobList }) => {
                     defaultValue={job.GENRE}
                     ref={industry}
                   >
-                    <option value="banking">Banking</option>
-                    <option value="accounting">Accounting</option>
-                    <option value="operations">Operations</option>
-                    <option value="hr">HR</option>
-                    <option value="marketing">Marketing</option>
-                    <option value="executive">Executive</option>
-                    <option value="compliance">Compliance</option>
-                    <option value="it">I.T.</option>
-                    <option value="administration">Administration</option>
-                    <option value="mortgage">Mortgage</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="healthcare admin">
+                      Healthcare Administration
+                    </option>
+                    <option value="it">IT</option>
+                    <option value="pharmacy">Pharmacy</option>
+                    <option value="medical billing">Medical Billing</option>
+                    <option value="radiology">Radiology</option>
+                    <option value="medical assistant">Medical Assistant</option>
                   </select>
                 </div>
                 <div>

@@ -25,17 +25,11 @@ function JobSearch() {
             <h3>{job.TITLE}</h3>
             <h4>{job.LOCATION}</h4>
             {job.HOURLY === 0 ? (
-              <h4>{`To $${formattedSalary}`}</h4>
+              <h4 className="job-salary">{`To $${formattedSalary}`}</h4>
             ) : (
-              <h4>{`$${job.SALARY}/hour`}</h4>
+              <h4 className="job-salary">{`$${job.SALARY}/hour`}</h4>
             )}
           </div>
-          <p
-            style={{ whiteSpace: "pre-line" }}
-            dangerouslySetInnerHTML={{
-              __html: convertToHTML(job.DESCRIPTION),
-            }}
-          ></p>
         </div>
       </Fade>
     );
@@ -56,39 +50,14 @@ function JobSearch() {
       return searchJobs();
     }
     switch (filterSelection) {
-      case "banking":
+      case "healthcare":
         return indexStore.jobList
-          .filter((job) => job.GENRE === "banking")
+          .filter((job) => job.GENRE === "healthcare")
           .map((job) => produceCard(job));
 
-      case "accounting":
+      case "healthcare admin":
         return indexStore.jobList
-          .filter((job) => job.GENRE === "accounting")
-          .map((job) => produceCard(job));
-
-      case "operations":
-        return indexStore.jobList
-          .filter((job) => job.GENRE === "operations")
-          .map((job) => produceCard(job));
-
-      case "hr":
-        return indexStore.jobList
-          .filter((job) => job.GENRE === "hr")
-          .map((job) => produceCard(job));
-
-      case "marketing":
-        return indexStore.jobList
-          .filter((job) => job.GENRE === "marketing")
-          .map((job) => produceCard(job));
-
-      case "executive":
-        return indexStore.jobList
-          .filter((job) => job.GENRE === "executive")
-          .map((job) => produceCard(job));
-
-      case "compliance":
-        return indexStore.jobList
-          .filter((job) => job.GENRE === "compliance")
+          .filter((job) => job.GENRE === "healthcare admin")
           .map((job) => produceCard(job));
 
       case "it":
@@ -96,14 +65,24 @@ function JobSearch() {
           .filter((job) => job.GENRE === "it")
           .map((job) => produceCard(job));
 
-      case "administration":
+      case "pharmacy":
         return indexStore.jobList
-          .filter((job) => job.GENRE === "administration")
+          .filter((job) => job.GENRE === "pharmacy")
           .map((job) => produceCard(job));
 
-      case "mortgage":
+      case "medical billing":
         return indexStore.jobList
-          .filter((job) => job.GENRE === "mortgage")
+          .filter((job) => job.GENRE === "medical billing")
+          .map((job) => produceCard(job));
+
+      case "radiology":
+        return indexStore.jobList
+          .filter((job) => job.GENRE === "radiology")
+          .map((job) => produceCard(job));
+
+      case "medical assistant":
+        return indexStore.jobList
+          .filter((job) => job.GENRE === "medical assistant")
           .map((job) => produceCard(job));
 
       default:
@@ -168,75 +147,28 @@ function JobSearch() {
     <div className="jobsearch-container">
       <div className="jobfilter-container">
         <nav className="jobfilter-navbar">
+          {/* NAVBAR START */}
           <h2
             onClick={() =>
-              filterSelection === "banking"
+              filterSelection === "healthcare"
                 ? setFilterSelection(null)
-                : setFilterSelection("banking")
+                : setFilterSelection("healthcare")
             }
-            className={filterSelection === "banking" ? "selected" : null}
+            className={filterSelection === "healthcare" ? "selected" : null}
           >
-            Banking
+            Healthcare
           </h2>
           <h2
             onClick={() =>
-              filterSelection === "accounting"
+              filterSelection === "healthcare admin"
                 ? setFilterSelection(null)
-                : setFilterSelection("accounting")
+                : setFilterSelection("healthcare admin")
             }
-            className={filterSelection === "accounting" ? "selected" : null}
-          >
-            Accounting
-          </h2>
-          <h2
-            onClick={() =>
-              filterSelection === "operations"
-                ? setFilterSelection(null)
-                : setFilterSelection("operations")
+            className={
+              filterSelection === "healthcare admin" ? "selected" : null
             }
-            className={filterSelection === "operations" ? "selected" : null}
           >
-            Operations
-          </h2>
-          <h2
-            onClick={() =>
-              filterSelection === "hr"
-                ? setFilterSelection(null)
-                : setFilterSelection("hr")
-            }
-            className={filterSelection === "hr" ? "selected" : null}
-          >
-            HR
-          </h2>
-          <h2
-            onClick={() =>
-              filterSelection === "marketing"
-                ? setFilterSelection(null)
-                : setFilterSelection("marketing")
-            }
-            className={filterSelection === "marketing" ? "selected" : null}
-          >
-            Marketing
-          </h2>
-          <h2
-            onClick={() =>
-              filterSelection === "executive"
-                ? setFilterSelection(null)
-                : setFilterSelection("executive")
-            }
-            className={filterSelection === "executive" ? "selected" : null}
-          >
-            Executive
-          </h2>
-          <h2
-            onClick={() =>
-              filterSelection === "compliance"
-                ? setFilterSelection(null)
-                : setFilterSelection("compliance")
-            }
-            className={filterSelection === "compliance" ? "selected" : null}
-          >
-            Compliance
+            Healthcare Administration
           </h2>
           <h2
             onClick={() =>
@@ -246,28 +178,53 @@ function JobSearch() {
             }
             className={filterSelection === "it" ? "selected" : null}
           >
-            I.T.
+            IT
           </h2>
           <h2
             onClick={() =>
-              filterSelection === "administration"
+              filterSelection === "pharmacy"
                 ? setFilterSelection(null)
-                : setFilterSelection("administration")
+                : setFilterSelection("pharmacy")
             }
-            className={filterSelection === "administration" ? "selected" : null}
+            className={filterSelection === "pharmacy" ? "selected" : null}
           >
-            Administration
+            Pharmacy
           </h2>
           <h2
             onClick={() =>
-              filterSelection === "mortgage"
+              filterSelection === "medical billing"
                 ? setFilterSelection(null)
-                : setFilterSelection("mortgage")
+                : setFilterSelection("medical billing")
             }
-            className={filterSelection === "mortgage" ? "selected" : null}
+            className={
+              filterSelection === "medical billing" ? "selected" : null
+            }
           >
-            Mortgage
+            Medical Billing
           </h2>
+          <h2
+            onClick={() =>
+              filterSelection === "radiology"
+                ? setFilterSelection(null)
+                : setFilterSelection("radiology")
+            }
+            className={filterSelection === "radiology" ? "selected" : null}
+          >
+            Radiology
+          </h2>
+          <h2
+            onClick={() =>
+              filterSelection === "medical assistant"
+                ? setFilterSelection(null)
+                : setFilterSelection("medical assistant")
+            }
+            className={
+              filterSelection === "medical assistant" ? "selected" : null
+            }
+          >
+            Medical Assistant
+          </h2>
+          {/* NAVBAR END */}
         </nav>
         <div className="jobfilter-searchbar">
           <input type="text" ref={searchBar}></input>
@@ -308,9 +265,11 @@ function JobSearch() {
           <h1 className="jobapply-description-title">{jobSelection.TITLE}</h1>
           <h3>{jobSelection.LOCATION}</h3>
           {jobSelection.HOURLY === 0 ? (
-            <h3>{`To $${parseFloat(jobSelection.SALARY).toLocaleString()}`}</h3>
+            <h3 className="jobapply-salary">{`To $${parseFloat(
+              jobSelection.SALARY
+            ).toLocaleString()}`}</h3>
           ) : (
-            <h3>{`$${jobSelection.SALARY}/hour`}</h3>
+            <h3 className="jobapply-salary">{`$${jobSelection.SALARY}/hour`}</h3>
           )}
           <p
             style={{ whiteSpace: "pre-line" }}

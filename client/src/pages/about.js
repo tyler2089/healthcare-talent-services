@@ -8,14 +8,14 @@ function AboutUs() {
   return (
     <div className="about-container">
       <div className="about-header">
-        {animateHeader("About Bank Talent Solutions")}
+        {animateHeader("About Healthcare Talent Services")}
       </div>
 
       <Fade right cascade>
         <div className="about-section">
           <h1>Who we are</h1>
           <p>
-            Bank Talent Solutions is your strategic partner in talent
+            Healthcare Talent Services is your strategic partner in talent
             acquisition. Our expertise lies in understanding the unique demands
             of the financial services industry, allowing us to deliver
             unparalleled recruitment solutions.
@@ -45,9 +45,9 @@ function AboutUs() {
             </li>
             <li>
               <span className="about-highlight">Cutting-edge Technology:</span>
-              Bank Talent Solutions utilizes cutting-edge recruitment technology
-              to streamline the hiring process. Our efficient and effective
-              solutions save you time and resources.
+              Healthcare Talent Services utilizes cutting-edge recruitment
+              technology to streamline the hiring process. Our efficient and
+              effective solutions save you time and resources.
             </li>
             <li>
               <span className="about-highlight">Commitment to Excellence:</span>
@@ -59,7 +59,7 @@ function AboutUs() {
             </li>
             <p>
               Whether you&#39;re seeking top talent or exploring new career
-              opportunities, Bank Talent Solutions is here to support your
+              opportunities, Healthcare Talent Services is here to support your
               success.
             </p>
           </ul>

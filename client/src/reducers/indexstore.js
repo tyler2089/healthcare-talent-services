@@ -36,6 +36,7 @@ const indexReducer = createReducer(initialState, (builder) => {
   builder.addCase(setJobList, (state, action) => {
     state.jobList = action.payload;
     state.calledApi = true;
+    console.log(state.jobList);
   });
 
   builder.addCase(setAccessToken, (state, action) => {

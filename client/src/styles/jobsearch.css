@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   border-bottom: 1px solid black;
   margin: 5px 0px;
@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  height: 60%;
 }
 
 .jobcard-title h3 {
@@ -24,14 +23,17 @@
 }
 
 .jobcard-title h4 {
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
 
-.jobcard-title h3:hover {
-  color: #4c607e;
+.job-salary {
+  color: #003b00;
+  background-color: #d1f0d1;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
-.jobcard-title > * {
-  margin: 5px 10px;
+.jobcard-title h3:hover {
+  color: #003b00;
 }
 
 .jobsearch-container {
@@ -151,6 +153,7 @@
   background-color: black;
   color: white;
 }
+
 @media only screen and (max-width: 499px) {
   .reset-search {
     font-size: 1em;
@@ -184,7 +187,9 @@
     width: 100%;
     margin-bottom: 10px;
   }
-
+  .jobfilter-navbar h2:hover {
+    background-color: default;
+  }
   .jobfilter-searchbar h2 {
     font-size: 1em;
   }
@@ -210,7 +215,9 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .jobfilter-navbar h2:hover {
+    background-color: default;
+  }
   .jobfilter-navbar h2 {
     margin: 0px;
   }
@@ -236,7 +243,9 @@
     justify-content: space-around;
     align-items: center;
   }
-
+  .jobfilter-navbar h2:hover {
+    background-color: default;
+  }
   .jobfilter-navbar {
     height: 55%;
     width: 100%;

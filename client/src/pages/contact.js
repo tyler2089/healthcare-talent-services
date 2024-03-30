@@ -10,7 +10,7 @@ function Contact() {
 
   const mobileHeader = () => {
     return (
-      <div className="mobile-header">
+      <div className="contact-mobile-header">
         {animateHeader("We're glad you're here!")}
         {animateHeader("How can we help?")}
       </div>
