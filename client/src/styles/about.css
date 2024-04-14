@@ -6,12 +6,11 @@
   justify-content: start;
   height: 100%;
   width: 100%;
-  background: #798b79;
   background: linear-gradient(
     180deg,
     rgba(112, 112, 112, 0) 0%,
     rgba(112, 112, 112, 0) 45%,
-    #798b79 46%
+    #004953 46%
   );
 }
 
@@ -44,7 +43,7 @@ ul {
 
 .about-section h1,
 .about-section h2 {
-  color: #003b00;
+  color: #004953;
 }
 
 .about-buttons {
@@ -56,8 +55,8 @@ ul {
 }
 
 .about-buttons h1 {
-  border: 2px solid #798b79;
-  color: #798b79;
+  border: 2px solid #daa520;
+  color: #daa520;
   padding: 5px 20px;
   border-radius: 20px;
   cursor: pointer;
@@ -65,7 +64,7 @@ ul {
 }
 
 .about-buttons h1:hover {
-  background-color: #798b79;
+  background-color: #daa520;
   color: white;
 }
 

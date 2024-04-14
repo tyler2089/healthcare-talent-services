@@ -36,7 +36,7 @@
   flex-direction: column;
   align-items: start;
   width: 70%;
-  background-color: #798b79;
+  background-color: #004953;
   justify-content: space-around;
   padding: 20px;
   border-radius: 10px;
@@ -52,8 +52,8 @@
   align-items: start;
 }
 .jobapply-salary {
-  color: #003b00;
-  background-color: #d1f0d1;
+  color: #644c10;
+  background-color: #e9d7aa;
   padding: 5px 10px;
   border-radius: 20px;
   text-align: center;
@@ -103,16 +103,16 @@
   margin: 5px;
   font-size: 1em;
   text-wrap: nowrap;
-  background-color: #003b00;
+  background-color: #daa520;
   cursor: pointer;
   transition: all 0.2s ease-in;
   border: 2px solid white;
 }
 
 .jobapply-section-button:hover {
-  color: #003b00;
+  color: #daa520;
   background-color: white;
-  border: 2px solid #003b00;
+  border: 2px solid #daa520;
 }
 
 .jobapply-section-button::after {
@@ -123,7 +123,7 @@
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #003b00;
+  background-color: #daa520;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

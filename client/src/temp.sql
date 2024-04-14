@@ -1,2 +1,2 @@
-UPDATE healthcare SET GENRE = "medical assistant" WHERE ID = 2;
+use test;
 select * from healthcare;

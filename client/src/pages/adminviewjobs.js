@@ -66,7 +66,6 @@ const AdminViewJobs = ({ jobList }) => {
                     </option>
                     <option value="it">IT</option>
                     <option value="pharmacy">Pharmacy</option>
-                    <option value="medical billing">Medical Billing</option>
                     <option value="radiology">Radiology</option>
                     <option value="medical assistant">Medical Assistant</option>
                   </select>

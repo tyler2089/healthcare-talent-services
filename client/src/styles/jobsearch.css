@@ -27,13 +27,13 @@
 }
 
 .job-salary {
-  color: #003b00;
-  background-color: #d1f0d1;
+  color: #644c10;
+  background-color: #e9d7aa;
   padding: 5px 10px;
   border-radius: 20px;
 }
 .jobcard-title h3:hover {
-  color: #003b00;
+  color: #daa520;
 }
 
 .jobsearch-container {
@@ -77,7 +77,7 @@
   border: 2px solid white;
   cursor: pointer;
   transition: all 0.2s ease-in;
-  background-color: #003b00;
+  background-color: #daa520;
   color: white;
 }
 
@@ -86,14 +86,14 @@
   text-wrap: nowrap;
   cursor: pointer;
   transition: all 0.2s ease-in;
-  background-color: #798b79 !important;
-  border: 2px solid #798b79 !important;
+  background-color: #007786 !important;
+  border: 2px solid #007786 !important;
   color: white;
 }
 
 .jobfilter-navbar h2:hover {
-  background-color: #798b79;
-  border: 2px solid #798b79;
+  background-color: #007786;
+  border: 2px solid #007786;
   color: white;
 }
 
@@ -113,7 +113,7 @@
   padding: 2px 10px 3px 4px;
   margin: 0px;
   border: none;
-  background-color: #003b00;
+  background-color: #daa520;
   color: white;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
@@ -123,7 +123,7 @@
 
 .jobfilter-searchbar h2:hover {
   color: white;
-  background-color: #798b79;
+  background-color: #daa520;
 }
 
 .job-container {

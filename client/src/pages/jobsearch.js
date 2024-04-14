@@ -70,11 +70,6 @@ function JobSearch() {
           .filter((job) => job.GENRE === "pharmacy")
           .map((job) => produceCard(job));
 
-      case "medical billing":
-        return indexStore.jobList
-          .filter((job) => job.GENRE === "medical billing")
-          .map((job) => produceCard(job));
-
       case "radiology":
         return indexStore.jobList
           .filter((job) => job.GENRE === "radiology")
@@ -127,7 +122,7 @@ function JobSearch() {
         emailjs
           .send(
             "service_iy3qdmg",
-            "template_wzuqnb7",
+            "template_okv6qyr",
             templateParams,
             "uwJXg9B_zk3gixJKB"
           )
@@ -189,18 +184,6 @@ function JobSearch() {
             className={filterSelection === "pharmacy" ? "selected" : null}
           >
             Pharmacy
-          </h2>
-          <h2
-            onClick={() =>
-              filterSelection === "medical billing"
-                ? setFilterSelection(null)
-                : setFilterSelection("medical billing")
-            }
-            className={
-              filterSelection === "medical billing" ? "selected" : null
-            }
-          >
-            Medical Billing
           </h2>
           <h2
             onClick={() =>

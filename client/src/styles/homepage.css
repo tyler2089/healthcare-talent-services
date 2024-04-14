@@ -24,7 +24,7 @@
 .title-card {
   height: 20vh;
   width: 100vw;
-  background-color: #003b00;
+  background-color: #004953;
   transition: all 1s ease-in;
   transform-origin: right;
   color: white;
@@ -43,7 +43,7 @@
   background-image: -webkit-linear-gradient(
     45deg,
     white,
-    #6e8c6e var(--distance),
+    #007786 var(--distance),
     white
   );
   -webkit-background-clip: text;
@@ -99,7 +99,7 @@
 }
 
 .navbar h3:hover {
-  background-color: #798b79 !important;
+  background-color: #007786 !important;
 }
 .links {
   height: 80vh;

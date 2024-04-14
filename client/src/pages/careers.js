@@ -107,7 +107,7 @@ function Careers() {
         <Fade left cascade>
           <div className="contact-info">
             <h1>Contact us at</h1>
-            <h1>{"+1(844) 554-8383"}</h1>
+            <h1>{"+1(844) 554-3118"}</h1>
           </div>
         </Fade>
       </div>

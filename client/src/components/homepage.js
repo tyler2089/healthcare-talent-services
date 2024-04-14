@@ -41,43 +41,43 @@ function Homepage() {
     if (indexStore.homePageOption) {
       switch (indexStore.homePageOption) {
         case "home":
-          homeLink.current.style.backgroundColor = "#798b79";
-          jobSearchLink.current.style.backgroundColor = "#003b00";
-          employersLink.current.style.backgroundColor = "#003b00";
-          aboutUsLink.current.style.backgroundColor = "#003b00";
-          careersLink.current.style.backgroundColor = "#003b00";
+          homeLink.current.style.backgroundColor = "#007786";
+          jobSearchLink.current.style.backgroundColor = "#004953";
+          employersLink.current.style.backgroundColor = "#004953";
+          aboutUsLink.current.style.backgroundColor = "#004953";
+          careersLink.current.style.backgroundColor = "#004953";
           break;
 
         case "jobsearch":
-          homeLink.current.style.backgroundColor = "#003b00";
-          jobSearchLink.current.style.backgroundColor = "#798b79";
-          employersLink.current.style.backgroundColor = "#003b00";
-          aboutUsLink.current.style.backgroundColor = "#003b00";
-          careersLink.current.style.backgroundColor = "#003b00";
+          homeLink.current.style.backgroundColor = "#004953";
+          jobSearchLink.current.style.backgroundColor = "#007786";
+          employersLink.current.style.backgroundColor = "#004953";
+          aboutUsLink.current.style.backgroundColor = "#004953";
+          careersLink.current.style.backgroundColor = "#004953";
           break;
 
         case "employer":
-          homeLink.current.style.backgroundColor = "#003b00";
-          jobSearchLink.current.style.backgroundColor = "#003b00";
-          employersLink.current.style.backgroundColor = "#798b79";
-          aboutUsLink.current.style.backgroundColor = "#003b00";
-          careersLink.current.style.backgroundColor = "#003b00";
+          homeLink.current.style.backgroundColor = "#004953";
+          jobSearchLink.current.style.backgroundColor = "#004953";
+          employersLink.current.style.backgroundColor = "#007786";
+          aboutUsLink.current.style.backgroundColor = "#004953";
+          careersLink.current.style.backgroundColor = "#004953";
           break;
 
         case "about":
-          homeLink.current.style.backgroundColor = "#003b00";
-          jobSearchLink.current.style.backgroundColor = "#003b00";
-          employersLink.current.style.backgroundColor = "#003b00";
-          aboutUsLink.current.style.backgroundColor = "#798b79";
-          careersLink.current.style.backgroundColor = "#003b00";
+          homeLink.current.style.backgroundColor = "#004953";
+          jobSearchLink.current.style.backgroundColor = "#004953";
+          employersLink.current.style.backgroundColor = "#004953";
+          aboutUsLink.current.style.backgroundColor = "#007786";
+          careersLink.current.style.backgroundColor = "#004953";
           break;
 
         case "careers":
-          homeLink.current.style.backgroundColor = "#003b00";
-          jobSearchLink.current.style.backgroundColor = "#003b00";
-          employersLink.current.style.backgroundColor = "#003b00";
-          aboutUsLink.current.style.backgroundColor = "#003b00";
-          careersLink.current.style.backgroundColor = "#798b79";
+          homeLink.current.style.backgroundColor = "#004953";
+          jobSearchLink.current.style.backgroundColor = "#004953";
+          employersLink.current.style.backgroundColor = "#004953";
+          aboutUsLink.current.style.backgroundColor = "#004953";
+          careersLink.current.style.backgroundColor = "#007786";
           break;
       }
     }

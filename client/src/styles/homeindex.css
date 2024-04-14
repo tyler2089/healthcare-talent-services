@@ -52,16 +52,16 @@
   margin: 0px 60px;
   font-size: 2em;
   text-wrap: nowrap;
-  background-color: #003b00;
+  background-color: #daa520;
   cursor: pointer;
   transition: all 0.2s ease-in;
   border: 2px solid white;
 }
 
 .hover-underline-animation:hover {
-  color: #798b79;
+  color: #daa520;
   background-color: white;
-  border: 2px solid #798b79;
+  border: 2px solid #daa520;
 }
 
 .hover-underline-animation:after {
@@ -72,7 +72,7 @@
   height: 5px;
   bottom: 0;
   left: 0;
-  background-color: #798b79;
+  background-color: #daa520;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

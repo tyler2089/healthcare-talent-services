@@ -8,6 +8,8 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import indexStore from "./reducers/indexstore";
 import AppRouter from "./routes/route";
+import { HelmetProvider } from "react-helmet-async";
+
 const store = configureStore({
   reducer: {
     index: indexStore,
@@ -16,7 +18,9 @@ const store = configureStore({
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
-    <AppRouter />
+    <HelmetProvider>
+      <AppRouter />
+    </HelmetProvider>
   </Provider>
 );
 

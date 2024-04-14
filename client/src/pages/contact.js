@@ -37,7 +37,7 @@ function Contact() {
       emailjs
         .send(
           "service_iy3qdmg",
-          "template_0lqrh18",
+          "template_hvzbwd6",
           templateParams,
           "uwJXg9B_zk3gixJKB"
         )
@@ -103,7 +103,7 @@ function Contact() {
         <Fade right cascade>
           <div className="contact-info">
             <h1>Contact us at</h1>
-            <h1>{"+1(844) 554-8383"}</h1>
+            <h1>{"+1(844) 554-3118"}</h1>
           </div>
         </Fade>
       </div>
